@@ -1,0 +1,43 @@
+:root {
+  --slidev-theme-primary: #c9e6f3;
+  --prism-font-size: 1.2em;
+}
+
+img {
+  max-height: 70%;
+  width: auto;
+  margin: 2rem auto;
+  border-radius: 1rem;
+}
+
+/* linear-gradient(90deg, rgba(0, 81, 181, 0.4) 0%, rgba(64, 66, 169, 0.4) 100%), url("/images/shakespeare.jpg") */
+
+.dark .slidev-slide-content {
+  background: linear-gradient(90deg, #0051b5 0%, #4042a9 100%) !important;
+}
+
+.slidev-code-wrapper {
+  padding: 0.5rem;
+}
+
+.slidev-layout {
+  font-size: 1.5rem;
+}
+
+.slidev-layout h1+p {
+  opacity: 1;
+}
+
+.slidev-layout blockquote {
+  font-size: 1.5rem;
+  padding: 1rem;
+}
+
+/*
+.grid-cols-2 :nth-child(2) {
+  border-radius: 1rem;
+} */
+
+.col-header {
+  margin-bottom: 1rem;
+}
