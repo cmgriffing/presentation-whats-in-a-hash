@@ -1,4 +1,7 @@
 name: Deploy
+permissions:
+  id-token: write
+  pages: write
 on: [push]
 jobs:
   build-and-deploy:
