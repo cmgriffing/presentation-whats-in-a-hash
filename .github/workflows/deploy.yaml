@@ -22,7 +22,7 @@ jobs:
       - run: pnpm build
 
       - name: Build
-        run: pnpm build -- --base /presentation-whats-in-a-hash/
+        run: pnpm build --base /presentation-whats-in-a-hash/
 
       - uses: actions/configure-pages@v4
 
