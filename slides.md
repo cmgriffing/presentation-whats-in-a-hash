@@ -3,7 +3,7 @@
 theme: ./theme
 # random image from a curated Unsplash collection by Anthony
 # like them? see https://unsplash.com/collections/94734566/slidev
-background: /images/shakespeare.jpg
+background: ./images/shakespeare.jpg
 # some information about your slides (markdown enabled)
 title: What's in a Hash?
 info: |
