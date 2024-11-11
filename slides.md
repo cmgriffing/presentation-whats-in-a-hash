@@ -38,7 +38,7 @@ image: /images/self-portrait.jpg
 
 - cmgriffing on all socials
 
-<img src="/images/qr-code.png" class="w-40 h-auto mx-auto my-2">
+<img src="./images/qr-code.png" class="w-40 h-auto mx-auto my-2">
 
 - Software Dev for ~10 years
 - Developer Advocate at GitKraken
@@ -47,7 +47,7 @@ image: /images/self-portrait.jpg
 
 ---
 layout: image-left
-image: /images/vexilla.png
+image: ./images/vexilla.png
 ---
 
 # Vexilla
@@ -65,7 +65,7 @@ image: /images/vexilla.png
 
 ---
 layout: image-right
-image: /images/subset.png
+image: ./images/subset.png
 ---
 
 # What is a Gradual Release?
@@ -216,13 +216,13 @@ layout: two-cols-header
 
 Speed
 
-<img src="/images/speed-2.jpg" class="h-[30vh] !w-auto my-2 px-2">
+<img src="./images/speed-2.jpg" class="h-[30vh] !w-auto my-2 px-2">
 
 ::right::
 
 Distribution
 
-<img src="/images/spread.jpg" class="h-[30vh] !w-auto my-2 px-2">
+<img src="./images/spread.jpg" class="h-[30vh] !w-auto my-2 px-2">
 
 ::bottom::
 
@@ -236,31 +236,31 @@ Only graphing the 5% to 95% distribution
 
 The fastest algorithms also had some of the slowest outliers
 
-<img src="/images/speed.png" class="max-h-[40vh] h-auto mx-auto my-2">
+<img src="./images/speed.png" class="max-h-[40vh] h-auto mx-auto my-2">
 
 ---
 
 # Distribution - Strings (100 iterations)
 
-<img src="/images/distribution-nanoid-100.png" class="max-h-[50vh] h-auto mx-auto my-2">
+<img src="./images/distribution-nanoid-100.png" class="max-h-[50vh] h-auto mx-auto my-2">
 
 ---
 
 # Distribution - Strings (1000 iterations)
 
-<img src="/images/distribution-nanoid-1000.png" class="max-h-[50vh] h-auto mx-auto my-2">
+<img src="./images/distribution-nanoid-1000.png" class="max-h-[50vh] h-auto mx-auto my-2">
 
 ---
 
 # Distribution - Numbers (100 iterations)
 
-<img src="/images/distribution-numeric-100.png" class="max-h-[50vh] h-auto mx-auto my-2">
+<img src="./images/distribution-numeric-100.png" class="max-h-[50vh] h-auto mx-auto my-2">
 
 ---
 
 # Distribution - Numbers (1000 iterations)
 
-<img src="/images/distribution-numeric-1000.png" class="max-h-[50vh] h-auto mx-auto my-2">
+<img src="./images/distribution-numeric-1000.png" class="max-h-[50vh] h-auto mx-auto my-2">
 
 ---
 
@@ -269,7 +269,7 @@ The fastest algorithms also had some of the slowest outliers
 JS does some shenanigans with bitwise operations
 
 
-<img src="/images/bitwise.png" class="max-h-[50vh] h-auto mx-auto my-2">
+<img src="./images/bitwise.png" class="max-h-[50vh] h-auto mx-auto my-2">
 
 ---
 
