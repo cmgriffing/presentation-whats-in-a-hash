@@ -236,31 +236,31 @@ Only graphing the 5% to 95% distribution
 
 The fastest algorithms also had some of the slowest outliers
 
-<img src="/images/speed.png" class="max-h-[50vh] h-auto mx-auto my-2">
+<img src="/images/speed.png" class="max-h-[40vh] h-auto mx-auto my-2">
 
 ---
 
 # Distribution - Strings (100 iterations)
 
-<img src="/images/distribution-nanoid-100.png" class="max-h-[60vh] h-auto mx-auto my-2">
+<img src="/images/distribution-nanoid-100.png" class="max-h-[50vh] h-auto mx-auto my-2">
 
 ---
 
 # Distribution - Strings (1000 iterations)
 
-<img src="/images/distribution-nanoid-1000.png" class="max-h-[60vh] h-auto mx-auto my-2">
+<img src="/images/distribution-nanoid-1000.png" class="max-h-[50vh] h-auto mx-auto my-2">
 
 ---
 
 # Distribution - Numbers (100 iterations)
 
-<img src="/images/distribution-numeric-100.png" class="max-h-[60vh] h-auto mx-auto my-2">
+<img src="/images/distribution-numeric-100.png" class="max-h-[50vh] h-auto mx-auto my-2">
 
 ---
 
 # Distribution - Numbers (1000 iterations)
 
-<img src="/images/distribution-numeric-1000.png" class="max-h-[60vh] h-auto mx-auto my-2">
+<img src="/images/distribution-numeric-1000.png" class="max-h-[50vh] h-auto mx-auto my-2">
 
 ---
 
@@ -275,12 +275,42 @@ JS does some shenanigans with bitwise operations
 
 # Growthbook didn't have this problem
 
+```ts
+function hashFnv32a(str: string): number {
+  let hval = 0x811c9dc5;
+  const l = str.length;
+
+  for (let i = 0; i < l; i++) {
+    hval ^= str.charCodeAt(i);
+    hval +=
+      (hval << 1) + (hval << 4) + (hval << 7) + (hval << 8) + (hval << 24);
+  }
+  return hval >>> 0;
+}
+```
+
 ---
 
 # My final algorithm
 
 ```ts
+// From GrowthBook
+export function hash(
+  seed: string,
+  value: string,
+  version: number
+): number | null {
+  // ...
+  return (hashFnv32a(hashFnv32a(seed + value) + "") % 10000) / 10000;
+  // ...
+}
+```
 
+```ts
+// The hybrid function from our graphs earlier
+export function hashGB_hybrid(value: string, seed: number): number {
+  return ((hashFnv32a(value) * seed) % 1000) / 1000;
+}
 ```
 
 ---
