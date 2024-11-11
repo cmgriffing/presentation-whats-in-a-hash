@@ -5,6 +5,8 @@ permissions:
 on: [push]
 jobs:
   build-and-deploy:
+    environment:
+      name: github-pages
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
