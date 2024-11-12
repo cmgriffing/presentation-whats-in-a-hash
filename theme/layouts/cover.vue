@@ -9,7 +9,7 @@ const props = defineProps({
   },
 })
 
-const style = computed(() => handleBackground(props.background, true))
+const style = computed(() => handleBackground("./images/shakespeare.jpg", true))
 </script>
 
 <template>
